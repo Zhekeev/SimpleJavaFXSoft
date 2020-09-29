@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="770.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.service.countrytour.CountryTour">
+    <children>
+        <AnchorPane layoutY="116.0" prefHeight="396.0" prefWidth="770.0" style="-fx-background-color: FAFAFA;">
+            <effect>
+                <Blend mode="GREEN" opacity="0.76" />
+            </effect>
+            <children>
+                <Button fx:id="countryAddButton" layoutX="469.0" layoutY="198.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="74.0" style="-fx-background-color: #f39c63;" text="Добавить " textFill="WHITE" />
+                <Label layoutX="302.0" layoutY="14.0" text="Страны тур" textFill="#656565">
+                    <font>
+                        <Font size="32.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="setTourtIdDelete" layoutX="476.0" layoutY="268.0" promptText="Номер тура" />
+                <Label layoutX="479.0" layoutY="234.0" text="Удалить страны тур" textFill="#656565">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+                <Button fx:id="countryDeleteButton" layoutX="521.0" layoutY="312.0" mnemonicParsing="false" style="-fx-background-color: #f39c63;" text="Удалить" textFill="WHITE" />
+                <Label layoutX="434.0" layoutY="69.0" prefHeight="25.0" prefWidth="233.0" text="Добавить/обновить страны тур" textFill="#656565">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="setTourIdADD" layoutX="476.0" layoutY="118.0" promptText="Номер тура" />
+                <TableView fx:id="table" layoutX="10.0" layoutY="81.0" prefHeight="306.0" prefWidth="322.0">
+                    <columns>
+                        <TableColumn fx:id="tourId" prefWidth="145.0" text="Номер тура" />
+                        <TableColumn fx:id="countryId" prefWidth="176.0" text="Номер страны" />
+                    </columns>
+                </TableView>
+                <Button fx:id="countryUpdateButton" layoutX="559.0" layoutY="198.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="74.0" style="-fx-background-color: #f39c63;" text="Обновить" textFill="WHITE" />
+                <TextField fx:id="setCountryIdADD" layoutX="476.0" layoutY="157.0" promptText="Номер страны" />
+            </children>
+        </AnchorPane>
+        <Label layoutX="282.0" layoutY="3.0" text="Tour Operator" textFill="#dbb100">
+            <font>
+                <Font name="Pristina" size="44.0" />
+            </font>
+        </Label>
+        <Button fx:id="exitButton" layoutX="14.0" layoutY="39.0" mnemonicParsing="false" style="-fx-background-color: #2E3348; -fx-border-color: #f39c63; -fx-border-radius: 20 20 20 20;" text="Назад" textFill="WHITE" />
+    </children>
+</AnchorPane>

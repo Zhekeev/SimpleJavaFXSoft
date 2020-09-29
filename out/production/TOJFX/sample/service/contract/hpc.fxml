@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="770.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.service.contract.HPC">
+    <children>
+        <Label layoutX="299.0" layoutY="3.0" text="Tour Operator" textFill="#dbb100">
+            <font>
+                <Font name="Pristina" size="44.0" />
+            </font>
+        </Label>
+        <Button fx:id="exitButton" layoutX="14.0" layoutY="26.0" mnemonicParsing="false" style="-fx-border-radius: 20 20 20 20; -fx-background-color: #2E3348; -fx-border-color: #f39c63;" text="Назад" textFill="WHITE" />
+        <AnchorPane layoutY="114.0" prefHeight="396.0" prefWidth="770.0" style="-fx-background-color: FAFAFA;">
+            <children>
+                <Button fx:id="openButton" layoutX="333.0" layoutY="282.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="105.0" style="-fx-background-color: #f39c63;" text="Открыть" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font></Button>
+                <Label layoutX="284.0" layoutY="14.0" text="Выберите действие" textFill="#656565">
+                    <font>
+                        <Font size="23.0" />
+                    </font>
+                </Label>
+            <RadioButton fx:id="emplRB" layoutX="28.0" layoutY="90.0" mnemonicParsing="false" selected="true" text="Договора , оформленные «I-ым» сотрудником " />
+            <RadioButton fx:id="ContractRB" layoutX="28.0" layoutY="126.0" mnemonicParsing="false" text="Общая длительность «I-го» договора" />
+            <TextField fx:id="setEmployeeID" layoutX="333.0" layoutY="86.0" promptText="Номер сотрудника" />
+            <TextField fx:id="setContractID" layoutX="333.0" layoutY="122.0" promptText="Номер договора" />
+            </children>
+        </AnchorPane>
+        <Button fx:id="getTourButton" layoutX="89.0" layoutY="66.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="76.0" style="-fx-background-color: #2E3348;" text="Туры" textFill="WHITE">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Button>
+        <Button fx:id="getCountryButton" layoutX="201.0" layoutY="66.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="76.0" style="-fx-background-color: #2E3348;" text="Страны" textFill="WHITE">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Button>
+        <Button fx:id="getClientButton" layoutX="302.0" layoutY="66.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="76.0" style="-fx-background-color: #2E3348;" text="Клиенты" textFill="WHITE">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Button>
+        <Button fx:id="getServiceButton" layoutX="414.0" layoutY="66.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="76.0" style="-fx-background-color: #2E3348;" text="Сервисы" textFill="WHITE">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Button>
+        <Button fx:id="getCashboxButton" layoutX="509.0" layoutY="66.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="76.0" style="-fx-background-color: #2E3348;" text="Касса" textFill="WHITE">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Button>
+        <Button fx:id="getContractButton" layoutX="618.0" layoutY="66.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="99.0" style="-fx-background-color: #2E3348;" text="Контракты" textFill="WHITE">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Button>
+        <Line endX="64.0" layoutX="634.0" layoutY="105.0" startX="2.0" stroke="#f39c63" />
+    </children>
+</AnchorPane>
